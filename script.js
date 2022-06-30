@@ -237,26 +237,28 @@ form.addEventListener("submit", function (event) {
     isPinValid;
 
   if (isFormValid) {
-    fetch("http://localhost:4000/api/v1/users/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        firstName: fnameEl.value.trim(),
-        lastName: lnameEl.value.trim(),
-        emailAddress: emailEl.value.trim(),
-        address: addressEl.value.trim(),
-        mobileNumber: mobileEl.value.trim(),
-        pinCode: pinEl.value.trim(),
-      }),
-    })
-      .then((response) => response.json())
-      .then((data) => alert(data.status))
-      .catch((err) => {
-        alert(err.message);
-      });
-  } else {
-    alert("Some Field is Missing");
+    console.log("Form is submitted successfully");
+    alert("Form Submitted Successfully");
+    document.querySelector("form").reset();
+
+    // fetch("http://localhost:4000/api/v1/users/signup", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     firstName: fnameEl.value.trim(),
+    //     lastName: lnameEl.value.trim(),
+    //     emailAddress: emailEl.value.trim(),
+    //     address: addressEl.value.trim(),
+    //     mobileNumber: mobileEl.value.trim(),
+    //     pinCode: pinEl.value.trim(),
+    //   }),
+    // })
+    //   .then((response) => response.json())
+    //   .then((data) => alert(data.status))
+    //   .catch((err) => {
+    //     alert(err.message);
+    //   });
   }
 });

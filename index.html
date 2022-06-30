@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gantari&family=Patrick+Hand&family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="./script.js" defer></script>
     <title>SVPNPA</title>
   </head>
@@ -12,7 +20,11 @@
     <div class="container">
       <div class="cover-page">
         <section id="top-content">
-          <img class="logo" src="./assests/images/svpnpalogo.png" alt="logo" />
+          <img
+            class="logo logo1"
+            src="./assests/images/svpnpalogo.png"
+            alt="logo"
+          />
           <h4 class="top-content__title">
             SPORTS AND ACTIVITY MANAGEMENT SOFTWARE
           </h4>
@@ -35,12 +47,22 @@
         <form class="auth-form">
           <h3 id="signup__title">Sign up</h3>
           <div class="form-field">
-            <input type="text" id="fname" placeholder="Enter your name" />
+            <input
+              type="text"
+              id="fname"
+              placeholder="Enter your name"
+              autocomplete="off"
+            />
             <p class="errorName"></p>
           </div>
 
           <div class="form-field">
-            <input type="text" id="lname" placeholder="Enter your last name" />
+            <input
+              type="text"
+              id="lname"
+              placeholder="Enter your last name"
+              autocomplete="off"
+            />
             <p class="errorName"></p>
           </div>
 
@@ -51,12 +73,18 @@
               id="mobile"
               placeholder="Enter your mobile number"
               onkeypress="return isNumber(event)"
+              autocomplete="off"
             />
             <p class="errorName"></p>
           </div>
 
           <div class="form-field">
-            <input type="string" id="email" placeholder="Enter Email" />
+            <input
+              type="string"
+              id="email"
+              placeholder="Enter Email"
+              autocomplete="off"
+            />
             <p class="errorName"></p>
           </div>
 
@@ -65,6 +93,7 @@
               rows="5"
               id="address"
               placeholder="Enter your Address"
+              autocomplete="off"
             ></textarea>
             <p class="errorName"></p>
           </div>
@@ -76,6 +105,7 @@
               maxlength="6"
               placeholder="Enter Pin Code"
               onkeypress="return isNumber(event)"
+              autocomplete="off"
             />
             <p class="errorName"></p>
           </div>
@@ -83,7 +113,7 @@
           <button type="submit" class="btn">Submit</button>
         </form>
         <footer id="signup__footer">
-          &copy; Timing Technologies India | All Right Reserved <br />
+          &copy; 2022 Timing Technologies India | All Right Reserved <br />
           Version 1.0
         </footer>
       </div>
