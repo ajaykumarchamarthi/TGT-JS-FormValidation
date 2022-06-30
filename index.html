@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>SVPNPA</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cover-page">
+        <section id="top-content">
+          <img class="logo" src="./assests/images/svpnpalogo.png" alt="logo" />
+          <h4 class="top-content__title">
+            SPORTS AND ACTIVITY MANAGEMENT SOFTWARE
+          </h4>
+          <img
+            class="logo"
+            src="./assests/images/sams-logo-min.png"
+            alt="sams marathon pic"
+          />
+        </section>
+        <section class="mid-content">
+          <h3 class="mid-content__title">OUTDOOR TRAINING DASHBOARD</h3>
+        </section>
+        <section class="foot-content">
+          <h4 class="foot-content__title">
+            SARDAR VALLABHBHAI PATEL<br />NATIONAL POLICE ACADEMY
+          </h4>
+        </section>
+      </div>
+      <div class="auth">
+        <form class="auth-form">
+          <h3 id="signup__title">Sign up</h3>
+          <div class="form-field">
+            <input type="text" id="fname" placeholder="Enter your name" />
+            <p class="errorName"></p>
+          </div>
+
+          <div class="form-field">
+            <input type="text" id="lname" placeholder="Enter your last name" />
+            <p class="errorName"></p>
+          </div>
+
+          <div class="form-field">
+            <input
+              maxlength="10"
+              type="tel"
+              id="mobile"
+              placeholder="Enter your mobile number"
+              onkeypress="return isNumber(event)"
+            />
+            <p class="errorName"></p>
+          </div>
+
+          <div class="form-field">
+            <input type="string" id="email" placeholder="Enter Email" />
+            <p class="errorName"></p>
+          </div>
+
+          <div class="form-field">
+            <textarea
+              rows="5"
+              id="address"
+              placeholder="Enter your Address"
+            ></textarea>
+            <p class="errorName"></p>
+          </div>
+
+          <div class="form-field">
+            <input
+              id="pin"
+              type="text"
+              maxlength="6"
+              placeholder="Enter Pin Code"
+              onkeypress="return isNumber(event)"
+            />
+            <p class="errorName"></p>
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+        <footer id="signup__footer">
+          &copy; Timing Technologies India | All Right Reserved <br />
+          Version 1.0
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

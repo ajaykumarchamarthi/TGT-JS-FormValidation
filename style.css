@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  grid-template-rows: minmax(100vh, max-content);
+  width: 100%;
+}
+
+.cover-page {
+  background-image: linear-gradient(
+    to bottom,
+    #19b0da,
+    #81c0ea,
+    #b9d2f3,
+    #e2e7f9,
+    #ffffff
+  );
+  height: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  height: 125px;
+  width: 150px;
+}
+
+.top-content__title {
+  font-size: 1.4rem;
+}
+
+.mid-content {
+  text-align: center;
+}
+
+.mid-content__title {
+  font-size: 2rem;
+  margin: 0 1em;
+}
+
+.foot-content {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.foot-content__title {
+  font-size: 1.4rem;
+  line-height: 1.3em;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.auth-form {
+  position: relative;
+  top: 50%;
+  transform: translateY(-57%);
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.form-field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em 0;
+  position: relative;
+  justify-content: center;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 6px 0 6px;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+small {
+  display: block;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.success input {
+  border-color: green;
+}
+
+.success textarea {
+  border-color: green;
+}
+
+.error input {
+  border-color: red;
+}
+
+.error textarea {
+  border-color: red;
+}
+
+.errorName {
+  color: red;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+#signup__title {
+  margin-top: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75em 1.5em;
+  width: 90%;
+  background: #19b0da;
+  color: white;
+  border: none;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  background-color: #3937c3;
+  cursor: pointer;
+}
+
+#signup__footer {
+  text-align: center;
+  color: rgb(48, 47, 47);
+  background-color: rgb(134, 127, 127);
+  padding: 0.1em 1em;
+  width: 100%;
+}
