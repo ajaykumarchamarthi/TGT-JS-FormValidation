@@ -16,7 +16,7 @@
     <script src="./script.js" defer></script>
     <title>SVPNPA</title>
   </head>
-  <body>
+  <body onload="document.auth-form.reset();">
     <div class="container">
       <div class="cover-page">
         <section id="top-content">
@@ -44,25 +44,15 @@
         </section>
       </div>
       <div class="auth">
-        <form class="auth-form">
+        <form name="auth-form" class="auth-form">
           <h3 id="signup__title">Sign up</h3>
           <div class="form-field">
-            <input
-              type="text"
-              id="fname"
-              placeholder="Enter your name"
-              autocomplete="off"
-            />
+            <input type="text" id="fname" placeholder="Enter your name" />
             <p class="errorName"></p>
           </div>
 
           <div class="form-field">
-            <input
-              type="text"
-              id="lname"
-              placeholder="Enter your last name"
-              autocomplete="off"
-            />
+            <input type="text" id="lname" placeholder="Enter your last name" />
             <p class="errorName"></p>
           </div>
 
@@ -73,18 +63,12 @@
               id="mobile"
               placeholder="Enter your mobile number"
               onkeypress="return isNumber(event)"
-              autocomplete="off"
             />
             <p class="errorName"></p>
           </div>
 
           <div class="form-field">
-            <input
-              type="string"
-              id="email"
-              placeholder="Enter Email"
-              autocomplete="off"
-            />
+            <input type="string" id="email" placeholder="Enter Email" />
             <p class="errorName"></p>
           </div>
 
@@ -93,7 +77,6 @@
               rows="5"
               id="address"
               placeholder="Enter your Address"
-              autocomplete="off"
             ></textarea>
             <p class="errorName"></p>
           </div>
@@ -105,7 +88,6 @@
               maxlength="6"
               placeholder="Enter Pin Code"
               onkeypress="return isNumber(event)"
-              autocomplete="off"
             />
             <p class="errorName"></p>
           </div>

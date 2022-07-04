@@ -237,8 +237,9 @@ form.addEventListener("submit", function (event) {
     isPinValid;
 
   if (isFormValid) {
-    console.log("Form is submitted successfully");
-    alert("Form Submitted Successfully");
+    alert(
+      `Form Submitted Succesfully \nFull Name is - ${fname.value.trim()} ${lname.value.trim()} \nMobile Number - ${mobileEl.value.trim()} \nEmail - ${emailEl.value.trim()} \nAddress - ${addressEl.value.trim()} \nPinCode - ${pinEl.value.trim()}`
+    );
     document.querySelector("form").reset();
 
     // fetch("http://localhost:4000/api/v1/users/signup", {
